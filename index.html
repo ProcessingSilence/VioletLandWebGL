@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | lwday_Frankengame</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/VioletLand.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 640px; height: 360px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">lwday_Frankengame</div>
+		<br><br><h4>NOTE: The reason why the last level is untextured is because the tilemap kept getting corrupted, even when the scene was saved, reloaded, deleted, built from a brand new scene, etc. It's possible this might be a bug in the Unity engine, and I currently cannot do anything about it to fix it. </h4>
+		<br><h4>The title-screen originally had a tileset land display, but it kept getting corrupted as well.</h4>
+		<br><br><h4><a href="https://github.com/ProcessingSilence/lwday-frankengame">Github Link</a></h4>
+      </div>
+    </div>
+  </body>
+</html>
